@@ -86,7 +86,7 @@
     :effect (and 
         (not (activeconf ?i ?c1))
         (activeconf ?i ?c2)
-        (assign (countcycle ?i) 0)
+        (decrease (countcycle ?i) (countcycle ?i))
         (configurable ?i ?p)
     )
 )
@@ -117,7 +117,7 @@
         (not (trigger ?i))
         (not (active ?p))
         (inter ?p)
-	    (assign (greentime ?i) 0)
+      (decrease (greentime ?i) (greentime ?i))
     )
 )
 
@@ -142,7 +142,7 @@
   :effect (and
 	(not (inter ?p))
         (active ?p1)
-	(assign (intertime ?i) 0)
+  (decrease (intertime ?i) (intertime ?i))
     (when (endcycle ?i ?p1) (increase (countcycle ?i) 1))
     (when (endcycle ?i ?p) (not (configurable ?i ?p)))
 ))
