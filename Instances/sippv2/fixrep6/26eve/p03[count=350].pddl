@@ -202,105 +202,105 @@ conf_wrac1_1 conf_wrac1_2 conf_wrac1_3 conf_wrac1_4 conf_wrac1_5 conf_wrac1_6 co
 
 
 ;; CONF 1 PER WRBC1
-(= (confgreentime wrbc1_stage1 conf_wrbc1_1) 39)
-(= (confgreentime wrbc1_stage2 conf_wrbc1_1) 13)
-(= (confgreentime wrbc1_stage3 conf_wrbc1_1) 38)
-(= (confgreentime wrbc1_stage4 conf_wrbc1_1) 7)
-(= (confgreentime wrbc1_stage5 conf_wrbc1_1) 7)
+(= (confgreentime wrbc1_stage1 conf_wrbc1_1) 34)
+(= (confgreentime wrbc1_stage2 conf_wrbc1_1) 11)
+(= (confgreentime wrbc1_stage3 conf_wrbc1_1) 33)
+(= (confgreentime wrbc1_stage4 conf_wrbc1_1) 6)
+(= (confgreentime wrbc1_stage5 conf_wrbc1_1) 6)
 
 
 ;; CONF 2 PER WRBC1
-(= (confgreentime wrbc1_stage1 conf_wrbc1_2) 53)
-(= (confgreentime wrbc1_stage2 conf_wrbc1_2) 13)
-(= (confgreentime wrbc1_stage3 conf_wrbc1_2) 24)
-(= (confgreentime wrbc1_stage4 conf_wrbc1_2) 7)
-(= (confgreentime wrbc1_stage5 conf_wrbc1_2) 7)
+(= (confgreentime wrbc1_stage1 conf_wrbc1_2) 46)
+(= (confgreentime wrbc1_stage2 conf_wrbc1_2) 11)
+(= (confgreentime wrbc1_stage3 conf_wrbc1_2) 21)
+(= (confgreentime wrbc1_stage4 conf_wrbc1_2) 6)
+(= (confgreentime wrbc1_stage5 conf_wrbc1_2) 6)
 
 
 ;; CONF 3 PER WRBC1
-(= (confgreentime wrbc1_stage1 conf_wrbc1_3) 23)
-(= (confgreentime wrbc1_stage2 conf_wrbc1_3) 42)
-(= (confgreentime wrbc1_stage3 conf_wrbc1_3) 25)
-(= (confgreentime wrbc1_stage4 conf_wrbc1_3) 7)
-(= (confgreentime wrbc1_stage5 conf_wrbc1_3) 7)
+(= (confgreentime wrbc1_stage1 conf_wrbc1_3) 20)
+(= (confgreentime wrbc1_stage2 conf_wrbc1_3) 36)
+(= (confgreentime wrbc1_stage3 conf_wrbc1_3) 22)
+(= (confgreentime wrbc1_stage4 conf_wrbc1_3) 6)
+(= (confgreentime wrbc1_stage5 conf_wrbc1_3) 6)
 
 
 ;; CONF 4 PER WRBC1
-(= (confgreentime wrbc1_stage1 conf_wrbc1_4) 32)
-(= (confgreentime wrbc1_stage2 conf_wrbc1_4) 15)
-(= (confgreentime wrbc1_stage3 conf_wrbc1_4) 43)
-(= (confgreentime wrbc1_stage4 conf_wrbc1_4) 7)
-(= (confgreentime wrbc1_stage5 conf_wrbc1_4) 7)
+(= (confgreentime wrbc1_stage1 conf_wrbc1_4) 28)
+(= (confgreentime wrbc1_stage2 conf_wrbc1_4) 13)
+(= (confgreentime wrbc1_stage3 conf_wrbc1_4) 37)
+(= (confgreentime wrbc1_stage4 conf_wrbc1_4) 6)
+(= (confgreentime wrbc1_stage5 conf_wrbc1_4) 6)
 
 
 ;; CONF 5 PER WRBC1
-(= (confgreentime wrbc1_stage1 conf_wrbc1_5) 36)
-(= (confgreentime wrbc1_stage2 conf_wrbc1_5) 25)
-(= (confgreentime wrbc1_stage3 conf_wrbc1_5) 29)
-(= (confgreentime wrbc1_stage4 conf_wrbc1_5) 7)
-(= (confgreentime wrbc1_stage5 conf_wrbc1_5) 7)
+(= (confgreentime wrbc1_stage1 conf_wrbc1_5) 31)
+(= (confgreentime wrbc1_stage2 conf_wrbc1_5) 22)
+(= (confgreentime wrbc1_stage3 conf_wrbc1_5) 25)
+(= (confgreentime wrbc1_stage4 conf_wrbc1_5) 6)
+(= (confgreentime wrbc1_stage5 conf_wrbc1_5) 6)
 
 
 ;; CONF 6 PER WRBC1
-(= (confgreentime wrbc1_stage1 conf_wrbc1_6) 42)
-(= (confgreentime wrbc1_stage2 conf_wrbc1_6) 18)
-(= (confgreentime wrbc1_stage3 conf_wrbc1_6) 30)
-(= (confgreentime wrbc1_stage4 conf_wrbc1_6) 7)
-(= (confgreentime wrbc1_stage5 conf_wrbc1_6) 7)
+(= (confgreentime wrbc1_stage1 conf_wrbc1_6) 36)
+(= (confgreentime wrbc1_stage2 conf_wrbc1_6) 16)
+(= (confgreentime wrbc1_stage3 conf_wrbc1_6) 26)
+(= (confgreentime wrbc1_stage4 conf_wrbc1_6) 6)
+(= (confgreentime wrbc1_stage5 conf_wrbc1_6) 6)
 
 
 ;; CONF 1 PER WRCC1
-(= (confgreentime wrcc1_stage1 conf_wrcc1_1) 51)
-(= (confgreentime wrcc1_stage2 conf_wrcc1_1) 7)
-(= (confgreentime wrcc1_stage3 conf_wrcc1_1) 17)
-(= (confgreentime wrcc1_stage4 conf_wrcc1_1) 7)
-(= (confgreentime wrcc1_stage5 conf_wrcc1_1) 22)
-(= (confgreentime wrcc1_stage6 conf_wrcc1_1) 7)
+(= (confgreentime wrcc1_stage1 conf_wrcc1_1) 41)
+(= (confgreentime wrcc1_stage2 conf_wrcc1_1) 6)
+(= (confgreentime wrcc1_stage3 conf_wrcc1_1) 13)
+(= (confgreentime wrcc1_stage4 conf_wrcc1_1) 6)
+(= (confgreentime wrcc1_stage5 conf_wrcc1_1) 18)
+(= (confgreentime wrcc1_stage6 conf_wrcc1_1) 6)
 
 
 ;; CONF 2 PER WRCC1
-(= (confgreentime wrcc1_stage1 conf_wrcc1_2) 55)
-(= (confgreentime wrcc1_stage2 conf_wrcc1_2) 7)
-(= (confgreentime wrcc1_stage3 conf_wrcc1_2) 17)
-(= (confgreentime wrcc1_stage4 conf_wrcc1_2) 7)
-(= (confgreentime wrcc1_stage5 conf_wrcc1_2) 18)
-(= (confgreentime wrcc1_stage6 conf_wrcc1_2) 7)
+(= (confgreentime wrcc1_stage1 conf_wrcc1_2) 45)
+(= (confgreentime wrcc1_stage2 conf_wrcc1_2) 6)
+(= (confgreentime wrcc1_stage3 conf_wrcc1_2) 13)
+(= (confgreentime wrcc1_stage4 conf_wrcc1_2) 6)
+(= (confgreentime wrcc1_stage5 conf_wrcc1_2) 14)
+(= (confgreentime wrcc1_stage6 conf_wrcc1_2) 6)
 
 
 ;; CONF 3 PER WRCC1
-(= (confgreentime wrcc1_stage1 conf_wrcc1_3) 26)
-(= (confgreentime wrcc1_stage2 conf_wrcc1_3) 7)
-(= (confgreentime wrcc1_stage3 conf_wrcc1_3) 33)
-(= (confgreentime wrcc1_stage4 conf_wrcc1_3) 7)
-(= (confgreentime wrcc1_stage5 conf_wrcc1_3) 31)
-(= (confgreentime wrcc1_stage6 conf_wrcc1_3) 7)
+(= (confgreentime wrcc1_stage1 conf_wrcc1_3) 21)
+(= (confgreentime wrcc1_stage2 conf_wrcc1_3) 6)
+(= (confgreentime wrcc1_stage3 conf_wrcc1_3) 26)
+(= (confgreentime wrcc1_stage4 conf_wrcc1_3) 6)
+(= (confgreentime wrcc1_stage5 conf_wrcc1_3) 25)
+(= (confgreentime wrcc1_stage6 conf_wrcc1_3) 6)
 
 
 ;; CONF 4 PER WRCC1
-(= (confgreentime wrcc1_stage1 conf_wrcc1_4) 43)
-(= (confgreentime wrcc1_stage2 conf_wrcc1_4) 7)
-(= (confgreentime wrcc1_stage3 conf_wrcc1_4) 22)
-(= (confgreentime wrcc1_stage4 conf_wrcc1_4) 7)
-(= (confgreentime wrcc1_stage5 conf_wrcc1_4) 25)
-(= (confgreentime wrcc1_stage6 conf_wrcc1_4) 7)
+(= (confgreentime wrcc1_stage1 conf_wrcc1_4) 35)
+(= (confgreentime wrcc1_stage2 conf_wrcc1_4) 6)
+(= (confgreentime wrcc1_stage3 conf_wrcc1_4) 17)
+(= (confgreentime wrcc1_stage4 conf_wrcc1_4) 6)
+(= (confgreentime wrcc1_stage5 conf_wrcc1_4) 20)
+(= (confgreentime wrcc1_stage6 conf_wrcc1_4) 6)
 
 
 ;; CONF 5 PER WRCC1
-(= (confgreentime wrcc1_stage1 conf_wrcc1_5) 38)
-(= (confgreentime wrcc1_stage2 conf_wrcc1_5) 7)
-(= (confgreentime wrcc1_stage3 conf_wrcc1_5) 26)
-(= (confgreentime wrcc1_stage4 conf_wrcc1_5) 7)
-(= (confgreentime wrcc1_stage5 conf_wrcc1_5) 26)
-(= (confgreentime wrcc1_stage6 conf_wrcc1_5) 7)
+(= (confgreentime wrcc1_stage1 conf_wrcc1_5) 30)
+(= (confgreentime wrcc1_stage2 conf_wrcc1_5) 6)
+(= (confgreentime wrcc1_stage3 conf_wrcc1_5) 21)
+(= (confgreentime wrcc1_stage4 conf_wrcc1_5) 6)
+(= (confgreentime wrcc1_stage5 conf_wrcc1_5) 21)
+(= (confgreentime wrcc1_stage6 conf_wrcc1_5) 6)
 
 
 ;; CONF 6 PER WRCC1
-(= (confgreentime wrcc1_stage1 conf_wrcc1_6) 49)
-(= (confgreentime wrcc1_stage2 conf_wrcc1_6) 7)
-(= (confgreentime wrcc1_stage3 conf_wrcc1_6) 18)
-(= (confgreentime wrcc1_stage4 conf_wrcc1_6) 7)
-(= (confgreentime wrcc1_stage5 conf_wrcc1_6) 23)
-(= (confgreentime wrcc1_stage6 conf_wrcc1_6) 7)
+(= (confgreentime wrcc1_stage1 conf_wrcc1_6) 40)
+(= (confgreentime wrcc1_stage2 conf_wrcc1_6) 6)
+(= (confgreentime wrcc1_stage3 conf_wrcc1_6) 14)
+(= (confgreentime wrcc1_stage4 conf_wrcc1_6) 6)
+(= (confgreentime wrcc1_stage5 conf_wrcc1_6) 18)
+(= (confgreentime wrcc1_stage6 conf_wrcc1_6) 6)
 
 
 ;; CONF 1 PER WRDC1
@@ -346,45 +346,45 @@ conf_wrac1_1 conf_wrac1_2 conf_wrac1_3 conf_wrac1_4 conf_wrac1_5 conf_wrac1_6 co
 
 
 ;; CONF 1 PER WREC1
-(= (confgreentime wrec1_stage1 conf_wrec1_1) 72)
-(= (confgreentime wrec1_stage2 conf_wrec1_1) 7)
-(= (confgreentime wrec1_stage3 conf_wrec1_1) 18)
-(= (confgreentime wrec1_stage4 conf_wrec1_1) 9)
+(= (confgreentime wrec1_stage1 conf_wrec1_1) 61)
+(= (confgreentime wrec1_stage2 conf_wrec1_1) 6)
+(= (confgreentime wrec1_stage3 conf_wrec1_1) 15)
+(= (confgreentime wrec1_stage4 conf_wrec1_1) 8)
 
 
 ;; CONF 2 PER WREC1
-(= (confgreentime wrec1_stage1 conf_wrec1_2) 78)
-(= (confgreentime wrec1_stage2 conf_wrec1_2) 7)
-(= (confgreentime wrec1_stage3 conf_wrec1_2) 19)
-(= (confgreentime wrec1_stage4 conf_wrec1_2) 9)
+(= (confgreentime wrec1_stage1 conf_wrec1_2) 62)
+(= (confgreentime wrec1_stage2 conf_wrec1_2) 6)
+(= (confgreentime wrec1_stage3 conf_wrec1_2) 15)
+(= (confgreentime wrec1_stage4 conf_wrec1_2) 7)
 
 
 ;; CONF 3 PER WREC1
-(= (confgreentime wrec1_stage1 conf_wrec1_3) 66)
-(= (confgreentime wrec1_stage2 conf_wrec1_3) 7)
-(= (confgreentime wrec1_stage3 conf_wrec1_3) 21)
-(= (confgreentime wrec1_stage4 conf_wrec1_3) 12)
+(= (confgreentime wrec1_stage1 conf_wrec1_3) 56)
+(= (confgreentime wrec1_stage2 conf_wrec1_3) 6)
+(= (confgreentime wrec1_stage3 conf_wrec1_3) 18)
+(= (confgreentime wrec1_stage4 conf_wrec1_3) 10)
 
 
 ;; CONF 4 PER WREC1
-(= (confgreentime wrec1_stage1 conf_wrec1_4) 69)
-(= (confgreentime wrec1_stage2 conf_wrec1_4) 7)
-(= (confgreentime wrec1_stage3 conf_wrec1_4) 20)
-(= (confgreentime wrec1_stage4 conf_wrec1_4) 11)
+(= (confgreentime wrec1_stage1 conf_wrec1_4) 58)
+(= (confgreentime wrec1_stage2 conf_wrec1_4) 6)
+(= (confgreentime wrec1_stage3 conf_wrec1_4) 17)
+(= (confgreentime wrec1_stage4 conf_wrec1_4) 9)
 
 
 ;; CONF 5 PER WREC1
-(= (confgreentime wrec1_stage1 conf_wrec1_5) 74)
-(= (confgreentime wrec1_stage2 conf_wrec1_5) 7)
-(= (confgreentime wrec1_stage3 conf_wrec1_5) 18)
-(= (confgreentime wrec1_stage4 conf_wrec1_5) 9)
+(= (confgreentime wrec1_stage1 conf_wrec1_5) 60)
+(= (confgreentime wrec1_stage2 conf_wrec1_5) 6)
+(= (confgreentime wrec1_stage3 conf_wrec1_5) 17)
+(= (confgreentime wrec1_stage4 conf_wrec1_5) 7)
 
 
 ;; CONF 6 PER WREC1
-(= (confgreentime wrec1_stage1 conf_wrec1_6) 76)
-(= (confgreentime wrec1_stage2 conf_wrec1_6) 7)
-(= (confgreentime wrec1_stage3 conf_wrec1_6) 18)
-(= (confgreentime wrec1_stage4 conf_wrec1_6) 9)
+(= (confgreentime wrec1_stage1 conf_wrec1_6) 64)
+(= (confgreentime wrec1_stage2 conf_wrec1_6) 6)
+(= (confgreentime wrec1_stage3 conf_wrec1_6) 13)
+(= (confgreentime wrec1_stage4 conf_wrec1_6) 7)
 
 
 ;; CONF 1 PER WRFC1
