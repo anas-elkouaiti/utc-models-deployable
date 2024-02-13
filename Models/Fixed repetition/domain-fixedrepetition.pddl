@@ -1,5 +1,4 @@
 (define (domain urbantraffic)
-;; (:requirements :typing :fluents :time :timed-initial-literals :duration-inequalities :adl)
 
 (:types junction link stage configuration)
 

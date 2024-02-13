@@ -1,6 +1,6 @@
 (define (domain urbantraffic)
 
-(:types junction link stage configuration)
+(:types junction link stage configuration limit)
 
 (:predicates 
 (controllable ?i - junction)
@@ -12,7 +12,9 @@
 (endcycle ?i - junction ?p - stage)
 (activeconf ?i - junction ?c - configuration)
 (availableconf ?i - junction ?c - configuration)
-(dec ?i - junction ?p - stage)
+(configurable ?i - junction ?p - stage)
+(checkable ?i - junction ?p - stage)
+(activelimit ?i - junction ?l - limit)
 )
 
 (:functions 
@@ -24,6 +26,9 @@
 (greentime ?i - junction)
 (intertime ?i - junction)
 (counter ?r - link)
+(countcycle ?i - junction)
+(cyclelimit ?i - junction)
+(conflimit ?i - junction)
 )
 
 ;; the maximum time limit for green has been reached, but no need to restart token!
@@ -44,8 +49,8 @@
 :parameters (?p - stage ?i - junction ?c - configuration)
 :precondition (and 
 		(active ?p) (contains ?i ?p)
-        (activeconf ?i ?c)
-                (< (greentime ?i) (confgreentime ?p ?c))
+      (activeconf ?i ?c)
+    (< (greentime ?i) (confgreentime ?p ?c))
 )
 :effect (and
 		(increase (greentime ?i) (* #t 1 ) )
@@ -63,23 +68,42 @@
 :effect (and
 		(increase (occupancy ?r2) (* #t (turnrate ?p ?r1 ?r2)))
 		(decrease (occupancy ?r1) (* #t (turnrate ?p ?r1 ?r2)))
-        (increase (counter ?r2) (* #t (turnrate ?p ?r1 ?r2)))
+    (increase (counter ?r2) (* #t (turnrate ?p ?r1 ?r2)))
 ))
 
 ;; let the planner in control of changing configuration at the end of the phase cycle
 (:action changeConfiguration
-    :parameters (?p - stage ?i - junction ?c1 ?c2 - configuration)
+    :parameters (?p - stage ?i - junction ?c1 ?c2 - configuration ?l - limit)
     :precondition (and
         (inter ?p)
         (controllable ?i)
+        (activelimit ?i ?l)
+        (>= (countcycle ?i) (conflimit ?l))
         (endcycle ?i ?p)
         (availableconf ?i ?c2)
         (activeconf ?i ?c1)
         (not (activeconf ?i ?c2))
     )
     :effect (and 
-        (not (activeconf ?i ?c1)) 
+        (not (activeconf ?i ?c1))
         (activeconf ?i ?c2)
+        (decrease (countcycle ?i) (countcycle ?i))
+        (configurable ?i ?p)
+    )
+)
+
+(:action changeLimit
+    :parameters (?p - stage ?i - junction ?l1 ?l2 - limit)
+    :precondition (and 
+        (inter ?p)
+        (configurable ?i ?p)
+        (activelimit ?i ?l1)
+        (not (activelimit ?i ?l2))
+     )
+    :effect (and 
+      (not (activelimit ?i ?l1))
+      (activelimit ?i ?l2)
+      (not (configurable ?i ?p))
     )
 )
 
@@ -94,33 +118,10 @@
         (not (trigger ?i))
         (not (active ?p))
         (inter ?p)
-        (dec ?i ?p)
-        )
-)
-
-(:event decrease_greentime
-    :parameters (?p - stage ?i - junction)
-    :precondition (and
-        (dec ?i ?p)
-        (> (greentime ?i) 0)
-    )
-    :effect (and
         (decrease (greentime ?i) (greentime ?i))
-        (not (dec ?i ?p))
     )
 )
 
-(:event decrease_intergreen
-    :parameters (?p - stage ?i - junction)
-    :precondition (and
-        (dec ?i ?p)
-        (> (intertime ?i) 0)
-    )
-    :effect (and
-        (decrease (intertime ?i) (intertime ?i))
-        (not (dec ?i ?p))
-    )
-)
 
 (:process keepinter
   :parameters (?p - stage ?i - junction)
@@ -142,8 +143,40 @@
   :effect (and
 	(not (inter ?p))
         (active ?p1)
-        (dec ?i ?p)
-	)
+	(assign (intertime ?i) 0)
+    (decrease (intertime ?i) (intertime ?i))
+    (checkable ?i ?p1)
+    (checkable ?i ?p)
+))
+
+(:event increaseCycle
+    :parameters (?p - stage ?i - junction)
+    :precondition (and
+        (endcycle ?i ?p)
+        (active ?p)
+        (checkable ?i ?p)
+    )
+    :effect (and
+        (increase (countcycle ?i) 1)
+        (not (checkable ?i ?p))
+    )
 )
 
+(:event disableConf
+    :parameters (?p - stage ?i - junction)
+    :precondition (and
+        (checkable ?i ?p)
+        (not (active ?p))
+        (endcycle ?i ?p)
+    )
+    :effect (and
+        (not (configurable ?i ?p))
+        (not (checkable ?i ?p))
+    )
 )
+
+
+
+)
+
+
